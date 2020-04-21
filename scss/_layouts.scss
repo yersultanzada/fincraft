@@ -1,0 +1,119 @@
+.layouts {
+  .layout-item-title {
+    font-size: 24px;
+    @include roboto-bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .layout-item {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    .item-img {
+      img {
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+    }
+    .item-text {
+      padding: 20px;
+      &--desc {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        div {
+          color: $gray;
+          line-height: 1.1;
+          &:first-child {
+            font-size: 36px;
+            @include roboto-bold;
+            color: $black;
+            margin-right: 10px;
+          }
+        }
+      }
+      &--action {
+        text-align: right;
+        a {
+          &:after {
+            content: "";
+            width: 24px;
+            height: 12px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 8px;
+            background: url(../img/icons/arrow-right.svg);
+          }
+        }
+      }
+    }
+    &:hover {
+      box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.24);
+      transition: .5s ease;
+    }
+  }
+}
+.layouts-solo {
+  &--img {
+    img {
+      width: 100%;
+    }
+  }
+  &--text {
+    .text-title {
+      font-size: 30px;
+      @include roboto-bold;
+      text-transform: uppercase;
+    }
+    .text-object {
+      font-size: 24px;
+      @include roboto-bold;
+      text-transform: uppercase;
+    }
+    .text-type {
+      color: $gray;
+      margin-bottom: 15px;
+    }
+    .text-desc {
+      margin-bottom: 15px;
+    }
+    .text-cols {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      div {
+        color: $gray;
+        line-height: 1.1;
+        &:first-child {
+          font-size: 36px;
+          @include roboto-bold;
+          color: $black;
+          margin-right: 10px;
+        }
+      }
+    }
+    .callToAction-title {
+      font-size: 24px;
+      @include roboto-bold;
+      color: $red;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      div:first-child {
+        text-transform: uppercase;
+      }
+    }
+    form {
+      .form-control {
+        border-radius: 10px;
+      }
+      .form-btn {
+        margin-top: 25px;
+        .btn {
+          padding: .6rem 2.5rem;
+        }
+      }
+    }
+  }
+}

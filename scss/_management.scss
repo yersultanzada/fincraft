@@ -1,0 +1,59 @@
+.management  {
+  .row .row {
+    margin-bottom: 48px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &--img {
+    img {
+      width: 230px;
+      height: 270%;
+      object-fit: cover;
+    }
+  }
+  &--name {
+    font-size: 24px;
+    font-family: 'Roboto Bold', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  &--status {
+    color: $gray;
+  }
+  &--edu {
+    display: flex;
+    margin-top: 15px;
+    .edu-icon {
+      content: "";
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      margin-top: 3px;
+      background: url(../img/icons/education.svg);
+    }
+    .edu-item {
+      div:first-child {
+        color: $gray;
+      }
+    }
+  }
+  &--work {
+    display: flex;
+    margin-top: 15px;
+    .work-icon {
+      content: "";
+      width: 31px;
+      height: 20px;
+      margin-right: 10px;
+      margin-top: 3px;
+      background: url(../img/icons/experience.svg);
+    }
+    .work-item {
+      div:first-child {
+        color: $gray;
+      }
+    }
+  }
+}

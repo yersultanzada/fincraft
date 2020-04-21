@@ -1,0 +1,20 @@
+// Styling for the calltoaction section
+.callToAction {
+  background-color: #4a4a4a;
+  .block-title {
+    font-size: 30px;
+    @include roboto-bold;
+    color: $white;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  form {
+    .form-control {
+      border-radius: 10px;
+    }
+    .form-btn {
+      text-align: center;
+      margin-top: 25px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+// Styling for the services section
+section#services {
+  background-color: #f6f6f6;
+  .block-item {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 15px;
+    }
+  }
+}
+// Styling for the services1 section
+section#services1 {
+  .wt-block-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    margin: 0 auto;
+    padding: 15px;
+    img {
+      width: 50px;
+    }
+  }
+}

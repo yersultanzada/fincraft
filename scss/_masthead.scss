@@ -1,0 +1,28 @@
+// Styling for the masthead
+section#masthead {
+  position: relative;
+  .wt-background-headerImg {
+    background: url(../img/slider_main_web.jpg) no-repeat 50% 50%/cover,#3c506f;
+  }
+  .block-intro {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      span {
+        color: $red;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  section#masthead .block-intro {
+    padding-top: 180px;
+    padding-bottom: 290px;
+    h1 {
+      max-width: 660px;
+      margin: auto;
+    }
+  }
+}

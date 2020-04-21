@@ -1,0 +1,193 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  color: $black;
+  @include roboto-regular;
+}
+body.js-no-scroll {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: $red;
+  &:hover {
+    color: lighten($red, 10%);
+    text-decoration: none;
+  }
+}
+._preloader {
+  display: none;
+}
+nav[aria-label=breadcrumb] {
+  background-color: #f6f6f6;
+  .breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    .breadcrumb-item.active {
+      font-size: 14px;
+      color: $black;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+      content: "";
+      width: 6px;
+      height: 9px;
+      background: url(../img/icons/breadcrumbs.svg) no-repeat;
+      padding-right: .7rem;
+    }
+    a {
+      display: block;
+      font-size: 14px;
+      color: $gray;
+    }
+  }
+}
+.back-url-action {
+  margin-bottom: 15px;
+  a {
+    &:before {
+      content: "";
+      width: 24px;
+      height: 12px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+      background: url(../img/icons/arrow-right.svg);
+      transform: rotate(180deg);
+    }
+  }
+}
+.wt-block-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -2;
+  border-radius: inherit;
+  .wt-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+section {
+  padding: 50px 0;
+  h1.wt-section-heroTitle {
+    font-size: 36px;
+    line-height: 1.3;
+    width: 100%;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    font-style: normal;
+  }
+  h2.wt-section-title {
+    font-size: 24px;
+    line-height: 1.18;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    font-style: normal;
+    @include roboto-bold;
+  }
+}
+
+// Button Styles
+.btn {
+  font-size: 14px;
+  line-height: 1.2;
+  padding: .6rem 1.75rem;
+}
+.wt-btn-size-sm {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.wt-btn-size-md {
+  padding: 12px 24px;
+}
+.wt-btn-size-xl {
+  font-size: 15px;
+  padding: 15px 30px;
+}
+
+.wt-btn-primary {
+  background-color: $red;
+  border-color: $red;
+  color: white !important;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($red, 7.5%) !important;
+    border-color: darken($red, 7.5%) !important;
+    color: white !important;
+  }
+}
+.wt-btn-rounded {
+  border-radius: 10px;
+}
+.wt-btn-transparent {
+  background-color: transparent;
+  border-color: $primary-200;
+  color: $primary-200 !important;
+  border-width: 1px;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: transparent !important;
+    border-color: $primary-200 !important;
+    color: $primary-200 !important;
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary-200;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+// Media queries
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 991px) {
+  section {
+    padding: 40px 0;
+  }
+  section h1.wt-section-heroTitle {
+    font-size: 28px;
+  }
+  section h2.wt-section-title {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 740px;
+  }
+}

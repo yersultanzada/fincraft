@@ -1,0 +1,43 @@
+// Styling for the contact section
+.contacts {
+  padding-bottom: 0;
+  .section-subtitle {
+    font-size: 24px;
+    margin-top: 15px;
+    text-transform: uppercase;
+  }
+  .item-address {
+    display: flex;
+    color: $gray;
+    .address-icon {
+      content: "";
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      background: url(../img/icons/place.svg);
+    }
+  }
+  .item-phone, .item-mail {
+    margin-bottom: 5px;
+    a {
+      color: $gray;
+      &:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: sub;
+        margin-right: 5px;
+        background: url(../img/icons/phone.svg);
+      }
+    }
+  }
+  .item-mail a:before {
+    background: url(../img/icons/mail.svg);
+  }
+  .contacts-map {
+    img {
+      width: 100%;
+    }
+  }
+}
