@@ -95,3 +95,8 @@
     margin-bottom: 10px;
   }
 }
+@media (max-width: 575px) {
+  .news-solo .item-title {
+    font-size: 20px;
+  }
+}

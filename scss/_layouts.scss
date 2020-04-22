@@ -117,3 +117,25 @@
     }
   }
 }
+@media (max-width: 991px) {
+  .layouts .layout-item .item-text--desc div:first-child {
+    font-size: 28px;
+  }
+  .layouts-solo--img img {
+    margin-bottom: 20px;
+  }
+  .layouts-solo--text .text-title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 575px) {
+  .layouts-solo--text .text-cols div:first-child {
+    font-size: 28px;
+  }
+  .layouts-solo--text .form-row {
+    display: block;
+    .col {
+      margin-bottom: 20px;
+    }
+  }
+}

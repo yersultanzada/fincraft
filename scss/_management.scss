@@ -1,4 +1,4 @@
-.management  {
+.management {
   .row .row {
     margin-bottom: 48px;
     &:last-child {
@@ -22,35 +22,16 @@
   &--status {
     color: $gray;
   }
-  &--edu {
+  &--edu, &--work {
     display: flex;
     margin-top: 15px;
-    .edu-icon {
-      content: "";
-      width: 20px;
-      height: 20px;
+    .edu-icon, .work-icon {
       margin-right: 10px;
-      margin-top: 3px;
-      background: url(../img/icons/education.svg);
-    }
-    .edu-item {
-      div:first-child {
-        color: $gray;
+      img {
+        margin-bottom: 7px;
       }
     }
-  }
-  &--work {
-    display: flex;
-    margin-top: 15px;
-    .work-icon {
-      content: "";
-      width: 31px;
-      height: 20px;
-      margin-right: 10px;
-      margin-top: 3px;
-      background: url(../img/icons/experience.svg);
-    }
-    .work-item {
+    .edu-item, .work-item {
       div:first-child {
         color: $gray;
       }

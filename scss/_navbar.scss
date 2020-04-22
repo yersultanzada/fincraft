@@ -4,6 +4,7 @@
   .navbar-left {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .navbar-brand {
     img {
@@ -11,7 +12,7 @@
     }
   }
   .navbar-lang {
-    margin-left: 15px;
+    margin-left: 10px;
     a {
       color: $black;
       padding: 5px 10px;
@@ -25,9 +26,10 @@
     }
   }
   .burger_menu {
-    float: right;
-    padding-top: 10px;
-    color: $primary-200;
+    padding-top: 5px;
+    margin-left: 10px;
+    color: #222;
+    font-size: 20px;
   }
   .navbar-nav {
     .nav-item {
@@ -56,6 +58,9 @@
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
+    .navbar-left {
+      justify-content: flex-start;
+    }
     .navbar-brand {
       img {
         width: 270px;
@@ -110,15 +115,13 @@
   }
   .close-modal {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 18px;
+    right: 10px;
     z-index: 1000;
     cursor: pointer;
     background-color: transparent;
     a {
       display: block;
-      padding: 10px 15px;
-      color: $primary-200;
     }
   }
 }
