@@ -24,6 +24,9 @@ a {
 }
 ._preloader {
   display: none;
+  i {
+    margin-right: 5px;
+  }
 }
 nav[aria-label=breadcrumb] {
   background-color: #f6f6f6;

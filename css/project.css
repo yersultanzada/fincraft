@@ -34,6 +34,10 @@ a:hover {
   display: none;
 }
 
+._preloader i {
+  margin-right: 5px;
+}
+
 nav[aria-label=breadcrumb] {
   background-color: #f6f6f6;
 }
@@ -265,11 +269,11 @@ img::-moz-selection {
   font-size: 100%;
   font-weight: 400;
   padding: 0.75em 0;
-  color: #212529;
+  color: #000;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #383f45;
+  color: #e93737;
 }
 
 #mainNav .request_btn a.btn {
@@ -938,6 +942,10 @@ section#services1 .wt-block-img img {
 .callToAction form .form-btn {
   text-align: center;
   margin-top: 25px;
+}
+
+.callToAction form .contact-form__description {
+  color: #fff;
 }
 
 @media (max-width: 767px) {
