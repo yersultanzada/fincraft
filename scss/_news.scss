@@ -50,25 +50,6 @@
 }
 .news-all {
   background-color: $white;
-  .pagination {
-    .page-item {
-      .page-link {
-        border: none;
-        color: $gray;
-        padding: .5rem;
-        &:hover {
-          background-color: transparent;
-          color: $red;
-        }
-      }
-      &.active {
-        .page-link {
-          background-color: transparent;
-          color: $red;
-        }
-      }
-    }
-  }
 }
 .news-solo {
   .item-date {

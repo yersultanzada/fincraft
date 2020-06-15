@@ -34,7 +34,7 @@
   .navbar-nav {
     .nav-item {
       .nav-link {
-        font-size: 100%;
+        font-size: 15px;
         font-weight: 400;
         padding: 0.75em 0;
         color: $black;
@@ -91,11 +91,6 @@
     .modal-body {
       padding: 20px 25px;
       overflow-y: auto;
-      a.menu_logo {
-        font-size: 1.5em;
-        font-weight: 700;
-        color: $primary-200;
-      }
       a.nav-link {
         display: inline-block;
       }

@@ -34,7 +34,7 @@
 	const CATCHER = 'webtech19studio@gmail.com';
 	
 	// Тема письма
-	const SUBJECT = 'Заявка с сайта';
+	const SUBJECT = 'Заявка с сайта fgroup.kz';
 	
 	// Кодировка
   const CHARSET = 'UTF-8';

@@ -68,6 +68,25 @@ nav[aria-label=breadcrumb] {
     }
   }
 }
+.pagination {
+  .page-item {
+    .page-link {
+      border: none;
+      color: $gray;
+      padding: .5rem;
+      &:hover {
+        background-color: transparent;
+        color: $red;
+      }
+    }
+    &.active {
+      .page-link {
+        background-color: transparent;
+        color: $red;
+      }
+    }
+  }
+}
 .wt-block-background {
   position: absolute;
   top: 0;
@@ -139,28 +158,15 @@ section {
 .wt-btn-rounded {
   border-radius: 10px;
 }
-.wt-btn-transparent {
-  background-color: transparent;
-  border-color: $primary-200;
-  color: $primary-200 !important;
-  border-width: 1px;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: transparent !important;
-    border-color: $primary-200 !important;
-    color: $primary-200 !important;
-  }
-}
 
 // Highlight color customization
 ::-moz-selection {
-  background: $primary-200;
+  background: #676767;
   text-shadow: none;
 }
 
 ::selection {
-  background: $primary;
+  background: #676767;
   text-shadow: none;
 }
 

@@ -38,3 +38,17 @@
     }
   }
 }
+.report {
+  .report-item {
+    margin-bottom: 5px;
+    a {
+      color: #005dac;
+      &:hover {
+        text-decoration: underline;
+      }
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
