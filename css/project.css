@@ -410,17 +410,42 @@ section#services .block-item img {
   margin-right: 15px;
 }
 
-section#services1 .wt-block-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #cccccc;
-  margin: 0 auto;
-  padding: 15px;
+section#about {
+  line-height: 1.2;
 }
 
-section#services1 .wt-block-img img {
-  width: 50px;
+section#about .mission-text {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+section#about img {
+  max-width: 100%;
+}
+
+section#about .about-digits {
+  font-size: 48px;
+  color: #8e483f;
+  text-transform: uppercase;
+  font-family: 'Roboto Bold', sans-serif;
+  font-weight: 700;
+}
+
+section#about .about-credit {
+  font-size: 36px;
+  color: #8e483f;
+  font-family: 'Roboto Bold', sans-serif;
+  font-weight: 700;
+  border-bottom: 2px solid #000;
+  padding-bottom: 3px;
+}
+
+section#about .about-credit-other {
+  font-size: 18px;
+  color: #e93737;
+  font-family: 'Roboto Bold', sans-serif;
+  font-weight: 700;
+  margin-top: 5px;
 }
 
 .objects .block-item {
